@@ -23,7 +23,7 @@ int main() {
     Num a(20000, 100);
     assert(a.value == 0);
     assert(a.modulo == 100);
-    
+
     Num b = a;
     assert(b.value == 0);
     assert(b.modulo == 0);

@@ -1,30 +1,29 @@
-#include <iostream>
+#include <algorithm>
+#include <cassert>
+#include <cmath>
 #include <cstdio>
 #include <cstdlib>
-#include <vector>
-#include <algorithm>
-#include <cmath>
-#include <stack>
 #include <functional>
-#include <set>
-#include <queue>
-#include <string>
-#include <map>
 #include <iomanip>
+#include <iostream>
+#include <map>
+#include <queue>
+#include <set>
 #include <sstream>
-#include <cassert>
+#include <stack>
+#include <string>
+#include <vector>
 
 #include "prime_gen.hpp"
 
-
 int main() {
-    int start, num;
+  int start, num;
 
-    std::cin >> start >> num;
+  std::cin >> start >> num;
 
-    PrimeNumberGenerator gen(start);
-    
-    for (int i = 0; i < num; ++i) {
-        std::cout << gen.GetNextPrime() << " ";
-    }
+  PrimeNumberGenerator gen(start);
+
+  for (int i = 0; i < num; ++i) {
+    std::cout << gen.GetNextPrime() << " ";
+  }
 }

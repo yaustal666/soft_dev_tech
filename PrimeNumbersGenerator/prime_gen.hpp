@@ -47,4 +47,3 @@ class PrimeNumberGenerator {
     return true;
   }
 };
-
